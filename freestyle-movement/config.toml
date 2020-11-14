@@ -1,0 +1,26 @@
+baseURL = "http://freestylemovement.org/"
+languageCode = "en-us"
+title = "Freestyle Movement"
+theme = "freeTheme"
+
+[menu]
+    [[menu.main]]
+        name = "Home"
+        pre = "home"
+        url = "/"
+        weight = 1
+    [[menu.main]]
+        name = "Classes"
+        pre = "class"
+        url = "/class/"
+        weight = 2
+    [[menu.main]]
+        name = "Practices"
+        pre = "pract"
+        url = "/pract/"
+        weight = 3
+    [[menu.main]]
+        name = "Events"
+        pre = "event"
+        url = "/event/"
+        weight = 4
