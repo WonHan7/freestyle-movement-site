@@ -1,6 +1,7 @@
 # Developer Setup
 
 Use 'hugo server' to start a server.
+
 Use 'hugo server -D' to start a server including draft pages.
 
 ## Version
