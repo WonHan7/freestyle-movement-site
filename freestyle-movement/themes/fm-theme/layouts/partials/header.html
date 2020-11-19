@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-    <head>
-        <!-- Meta -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
 
-        <!-- Import -->
-        <link rel="stylesheet" type="text/css" href="/themes/fm-theme/static/css/styles.css"/>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Title -->
-        <title>{{ .Title }} - {{ .Site.Title }}</title>
-        {{ .Hugo.Generator }}
-    </head>
+    <!-- Import -->
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" media="all" />
 
-    <body>
-        <!-- Site Logo -->
-        <img src="/resources/_gen/images/siteicon.png" alt="Freestyle Movement" width="256px" height="257px"/>
+    <!-- Title -->
+    <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+    {{ .Hugo.Generator }}
 
-        <!-- Hamburger Menu -->
-        <div class="container" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
+</head>
+
+<body>
+
+    {{ partial "nav.html" . }}
+    <!-- Hamburger Menu -->
+    <!-- <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div> -->
+
+<main class="content">

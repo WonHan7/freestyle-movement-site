@@ -2,3 +2,10 @@ baseURL = "http://freestylemovement.ca/"
 languageCode = "en-us"
 title = "Freestyle Movement"
 theme = "fm-theme"
+
+[markup]
+
+    [markup.goldmark]
+
+        [markup.goldmark.renderer]
+        unsafe = true
