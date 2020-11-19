@@ -1,8 +1,7 @@
 # Developer setup
-`bundle install`
 
-`bundle exec jekyll serve`
+Use 'hugo server' to start a server
+Use `hugo server -D` to start a server including draft pages
 
-## Note
-Upgrading to jekyll 4 will break the bootstrap dependency and fail to build.
-Stay on Jekyll 3.8.6 for now
+## Version
+Hugo Static Site Generator v0.78.2
