@@ -1,0 +1,33 @@
+{{ if .Site.Params.styles.enable }}
+
+    <!-- Styles -->
+    <section id="styles" class="styles section">
+        <div class="container">
+            <div class="row">
+
+                <!-- Styles Header -->
+                <div class="heading wow fadeInUp">
+                    {{ with .Site.Params.styles.title }}
+                        <h2>{{ . }}</h2>
+                    {{ end }}
+                    {{ with .Site.Params.styles.subtitle }}
+                        <p>{{ . }}</p>
+                    {{ end }}
+                </div>
+
+                <!-- Different Dance Styles (Modify in config.toml) -->
+                {{ range .Site.Params.styles.stylesItem }}
+                <div class="col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay="{{ .delay }}">
+                    <div class="block">
+                        <i class="{{ .icon }}"></i>
+                        <h3>{{ .title }}</h3>
+                        <p>{{ .description }}</p>
+                    </div>
+                </div>
+                {{ end }}
+    
+            </div>
+        </div>
+    </section>
+
+{{ end }}

@@ -1,0 +1,37 @@
+{{ if .Site.Params.main.enable }}
+
+    <!-- Main -->
+    <section id="home" class="main" style='background-image: url("/images/practice-header.jpg");'>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-6">
+
+                    <!-- Landing Page -->
+                    <div class="block">
+                        {{ with .Site.Params.main.title }}
+                        <h1 class="wow fadeInDown" data-wow-delay="0.3s" data-wow-duration=".2s">
+                            FREESTYLE MOVEMENT
+                        </h1>
+                        {{ end }}
+                        {{ with .Site.Params.main.subtitle }}
+                        <p class="wow fadeInDown" data-wow-delay="0.5s" data-wow-duration=".5s">
+                            We create opportunities for bboys, bgirls, choreographers and freestyle
+                            dancers to grow and build the Hip Hop community in Edmonton. We teach
+                            classes, organize competitions and run a weekly open practice session (Change this)
+                        </p>
+                        {{ end }}
+                        {{ with .Site.Params.main.btnText }}
+                        <div class="wow fadeInDown" data-wow-delay="0.7s" data-wow-duration=".7s">
+                            <a class="btn btn-home" href="#about" role="button">
+                                Learn More
+                            </a>
+                        </div>
+                        {{ end }}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+{{ end }}

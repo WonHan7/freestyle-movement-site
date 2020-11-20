@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<html class="no-js" lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 <head>
 
     <!-- Meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
 
-    <!-- Import -->
-    <link rel="stylesheet" type="text/css" href="/css/styles.css" media="all" />
+    <!-- Imports -->
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="{{ `css/bootstrap.min.css` | absURL }}">
+    <link rel="stylesheet" href="{{ `css/font-awesome.min.css` | absURL }}">
+    <link rel="stylesheet" href="{{ `css/owl.carousel.css` | absURL }}">
+    <link rel="stylesheet" href="{{ `css/animate.css` | absURL }}">
+    <link rel="stylesheet" href="{{ `css/style.css` | absURL }}">
+    <link rel="stylesheet" href="{{ `css/responsive.css` | absURL }}">
 
     <!-- Title -->
-    <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
-    {{ .Hugo.Generator }}
+    <title> {{ .Title }} </title>
+    {{ hugo.Generator }}
+
+    {{ $.Site.Params.customHead | safeHTML }}
 
 </head>
 
-<body>
-
-    {{ partial "nav.html" . }}
-    <!-- Hamburger Menu -->
-    <!-- <div class="container" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </div> -->
-
-<main class="content">
+<body id="body">

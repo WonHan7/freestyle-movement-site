@@ -1,0 +1,47 @@
+<!-- Navigation -->
+<div class="container">
+    <nav class="navbar navbar-fixed-top  navigation " id="top-nav">
+
+        <!-- Logo -->
+        <a class="navbar-brand float-none float-lg-left" href="{{ .Site.BaseURL }}">
+            {{ with .Site.Params.navigation.logo }}
+                <img src="/images/siteicon.png" alt="Freestyle Movement" width="64px" height="64px" style="border-radius: 50%"/>
+            {{ end }}
+        </a>
+
+        <!-- Hamburger Menu -->
+        <button class="navbar-toggler hidden-lg-up float-lg-right" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <i class="tf-ion-android-menu"></i>
+        </button>
+
+        <!-- Nav Bar -->
+        <div class="collapse navbar-toggleable-md" id="navbarResponsive">
+            <ul class="nav navbar-nav menu float-lg-right" id="top-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ .Site.BaseURL }}#home">Home</a>
+                </li>
+                {{ if .Site.Params.about.enable }}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ .Site.BaseURL }}#about">About</a>
+                    </li>
+                {{ end }}
+                {{ if .Site.Params.styles.enable }}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ .Site.BaseURL }}#styles">Styles</a>
+                    </li>
+                {{ end }}
+                {{ if .Site.Params.movevents.enable }}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ .Site.BaseURL }}#movevents">Movevents</a>
+                    </li>
+                {{ end }}
+                {{ if .Site.Params.contact.enable }}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ .Site.BaseURL }}#contact">Contact Us</a>
+                    </li>
+                {{ end }}
+            </ul>
+        </div>
+        
+    </nav>
+</div>

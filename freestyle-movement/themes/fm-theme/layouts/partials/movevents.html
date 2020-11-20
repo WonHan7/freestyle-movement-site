@@ -1,0 +1,24 @@
+{{ if .Site.Params.movevents.enable }}
+    
+    <!-- Movevents -->
+    <section id="movevents" class="movevents" style='background-image: url("/images/movevents.jpg")' >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow text-center">
+
+                    <!-- Event List -->
+                    <div class="block">
+                        {{ with .Site.Params.movevents.title }}
+                            <h2>MOVEVENTS</h2>
+                        {{ end }}
+                        {{ with .Site.Params.movevents.subtitle }}
+                            <p>List of our events goes here</p>
+                        {{ end }}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+{{ end }}

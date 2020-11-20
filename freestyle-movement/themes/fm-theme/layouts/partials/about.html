@@ -1,0 +1,40 @@
+{{ if .Site.Params.about.enable }}
+
+    <!-- About -->
+    <section id="about" class="section about bg-gray">
+        <div class="container">
+
+            <!-- Information -->
+            <div class="row">
+                <div class="col-md-7 col-sm-12 wow fadeInLeft">
+                    <div class="content">
+                        <div class="sub-heading">
+                        {{ with .Site.Params.about.heading }}
+                            <h2>Header</h2>
+                        {{ end }}
+                        </div>
+                        {{ with .Site.Params.about.description }}
+                            <h3 style="font-size: 16px;">Some more stuff</h3>
+                        {{ end }}
+                    </div>
+                </div>
+
+                <!-- Carousel -->
+                <div class="col-md-5 col-sm-12 wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="about-slider">
+                        {{ range .Site.Params.about.sliderItem }}
+                            <!-- You can also do | <img src="{{ .image }}"/> | and modify images in slider through config.toml -->
+                            <img style="border-radius: 15px;" src="/images/about/fm-logo-p.jpg">
+                            <img style="border-radius: 15px;" src="/images/about/unrivaled.jpg">
+                            <img style="border-radius: 15px;" src="/images/about/unrivaled.jpg">
+                            <img style="border-radius: 15px;" src="/images/about/prac-1.jpg">
+                            <img style="border-radius: 15px;" src="/images/about/prac-2.jpg">
+                        {{ end }}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+{{ end }}
