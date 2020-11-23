@@ -1,0 +1,35 @@
+{{ if .Site.Params.info.enable }}
+
+    <!-- About -->
+    <section id="about" class="section about bg-gray">
+        <div class="container">
+
+            <!-- Information -->
+            <div class="row">
+                <div class="col-md-7 col-sm-12 wow fadeInLeft">
+                    <div class="content">
+                        <div class="sub-heading">
+                        {{ with .Site.Params.info.heading }}
+                            <h2>Header</h2>
+                        {{ end }}
+                        </div>
+                        {{ with .Site.Params.info.description }}
+                            <h3 style="font-size: 16px;">Some more stuff</h3>
+                        {{ end }}
+                    </div>
+                </div>
+
+                <!-- Carousel -->
+                <div class="col-md-5 col-sm-12 wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="about-slider">
+                        {{ range .Site.Params.info.sliderItem }}
+                            <img style="border-radius: 15px;" src="{{ .image }}"/>
+                        {{ end }}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+{{ end }}

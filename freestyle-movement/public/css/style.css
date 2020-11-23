@@ -105,16 +105,15 @@ a:active {
 }
 
 .btn {
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 .btn-home {
     background-color: #1bafb4;
-    border-radius: 2.5px;
+    border-radius: 0px;
     color: #fff;
     font-size: 18px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 40px;
     margin-top: 30px;
 }
 
@@ -352,71 +351,6 @@ a:active {
     }
 }
 
-.container-home {
-    margin-left: 5%;
-}
-
-.home-vid {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    margin-right: 5%;
-}
-.home-vid::after {
-    padding-top: 56.25%;
-    display: block;
-    content: '';
-}
-.home-vid iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-@media only screen and (max-width: 700px) {
-    .container {
-        margin-left: 0%;
-    }
-
-    .home-vid {
-        margin-right: 0%;
-        display: none;
-    }
-}
-
-i {
-    font-size: 35px;
-}
-.instagram {
-    color: #833AB4;
-}
-.youtube {
-    color: #FF0000;
-}
-.facebook {
-    color: #4267B2;
-}
-
-/* ANNOUNCEMENTS */
-.info .content h3 {
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 36px;
-    color: #7e7e7e;
-    margin-bottom: 20px;
-    font-family: 'Droid Serif', serif;
-}
-
-.info .info-slider img {
-    width: 100%;
-    height: auto;
-}
-.container-info {
-    /*  */
-}
-
 /* NAVIGATION  */
 .navigation {
     background-color: transparent;
@@ -493,11 +427,6 @@ i {
 
 .styles .block p {
     color: #666;
-}
-
-.ds-link {
-    text-decoration: none;
-    color: black;
 }
 
 /* ABOUT */

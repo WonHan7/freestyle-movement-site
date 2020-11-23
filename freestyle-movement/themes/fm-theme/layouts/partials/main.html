@@ -1,37 +1,60 @@
 {{ if .Site.Params.main.enable }}
 
     <!-- Main -->
-    <section id="home" class="main" style='background-image: url("/images/practice-header.jpg");'>
-        <div class="container">
+    <section id="home" class="main" style='background-image: url("/images/movevents.jpg");'>
+        <div class="container-home">
             <div class="row">
                 <div class="col-lg-7 col-md-6">
 
                     <!-- Landing Page -->
                     <div class="block">
+
                         {{ with .Site.Params.main.title }}
                         <h1 class="wow fadeInDown" data-wow-delay="0.3s" data-wow-duration=".2s">
                             FREESTYLE MOVEMENT
                         </h1>
                         {{ end }}
+
                         {{ with .Site.Params.main.subtitle }}
                         <p class="wow fadeInDown" data-wow-delay="0.5s" data-wow-duration=".5s">
-                            We create opportunities for bboys, bgirls, choreographers and freestyle
-                            dancers to grow and build the Hip Hop community in Edmonton. We teach
-                            classes, organize competitions and run a weekly open practice session (Change this)
+                            An Edmonton based registered non-profit organization that aims to support
+                            Hip Hop related dance styles through hosting open practice sessions, competitions, performances, and workshops.
                         </p>
-                        {{ end }}
+                        {{ end }}                      
+                                   
                         {{ with .Site.Params.main.btnText }}
                         <div class="wow fadeInDown" data-wow-delay="0.7s" data-wow-duration=".7s">
-                            <a class="btn btn-home" href="#about" role="button">
-                                Learn More
+                            <a class="btn btn-home" href="https://discord.gg/BgKSbtX5mC" target="_blank" role="button">
+                                <span class="discord"><i class="fab fa-discord"></i></span>
+                                <span class="none" style="font-size: 35px; margin-left: 10px;">Join us on Discord!</span>
+                            </a>
+                        </div>                        
+                        <div class="wow fadeInDown" data-wow-delay="0.7s" data-wow-duration=".7s">
+                            <a class="instagram" chref="https://www.instagram.com/freestyle.movement/" target="_blank" role="button">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+
+                            <a class="youtube" href="https://www.youtube.com/channel/UCKZV387VdbszAIyhbCd_JnA" target="_blank" style="padding-left: 10px;" role="button">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            
+                            <a class="facebook" href="https://www.facebook.com/freestylemovement.ca" target="_blank" style="padding-left: 10px;" role="button">
+                                <i class="fab fa-facebook"></i>
                             </a>
                         </div>
                         {{ end }}
+
                     </div>
 
                 </div>
             </div>
         </div>
+        
+        <!-- Featured Vid -->
+        <div class="home-vid" style="--aspect-ratio: 3 / 4;">
+            <iframe width="560" height="420" frameborder="0" allowfullscreen src="https://www.youtube.com/watch?v=B-gJ2zQo7fI?autoplay=1&mute=1"></iframe>
+        </div>
+        
     </section>
 
 {{ end }}

@@ -33,6 +33,25 @@ btnText           = "Learn More"
 
 
 
+# Info
+[params.info]
+enable      = true
+heading     = ""
+description = ""
+
+[[params.info.sliderItem]]
+image   = "images/about/fm-logo-p.jpg"
+[[params.info.sliderItem]]
+image   = "images/about/unrivaled.jpg"
+[[params.info.sliderItem]]
+image   = "images/about/unrivaled.jpg"
+[[params.info.sliderItem]]
+image   = "/images/about/prac-1.jpg"
+[[params.info.sliderItem]]
+image   = "/images/about/prac-2.jpg"
+
+
+
 # About
 [params.about]
 enable      = true
@@ -60,51 +79,52 @@ subtitle    = "Here we can put all the different dance styles"
 
 [[params.styles.stylesItem]]
 # use delay for reveal items one by one
-icon    = "Icon"
-title   = "Breakdancing"
-description = "Brief Description"
+icon    = ""
+title   = "[Breakdancin]()"
+description = ""
 delay   = "0s"
 
 [[params.styles.stylesItem]]
-icon    = "Icon"
-title   = "Locking"
-description = "Brief Description"
+icon    = ""
+title   = "[Locking]()"
+description = ""
 delay   = "0.2s"
 
 [[params.styles.stylesItem]]
-icon    = "Icon"
-title   = "Whacking"
-description = "Brief Description"
+icon    = ""
+title   = "[Whacking]()"
+description = ""
 delay   = "0.4s"
 
 [[params.styles.stylesItem]]
-icon    = "Icon"
-title   = "K-Pop"
-description = "Brief Description"
+icon    = ""
+title   = "[K-Pop]()"
+description = ""
+
 delay   = "0.6s"
 
 [[params.styles.stylesItem]]
-icon    = "Icon"
-title   = "Funk"
-description = "Brief Description"
+icon    = ""
+title   = "[Contemporary]()"
+description = ""
 delay   = "0.8s"
 
 [[params.styles.stylesItem]]
-icon    = "Icon"
-title   = "Lyrical"
-description = "Brief Description"
+icon    = ""
+title   = "[Popping]()"
+description = ""
 delay   = "1s"
 
 [[params.styles.stylesItem]]
-icon    = "Icon"
-title   = "Popping"
-description = "Brief Description"
+icon    = ""
+title   = "[Tutting]()"
+description = ""
 delay   = "1.2s"
 
 [[params.styles.stylesItem]]
-icon    = "Icon"
-title   = "Something"
-description = "Brief Description"
+icon    = ""
+title   = "[Funk]()"
+description = ""
 delay   = "1.5s"
 
 
