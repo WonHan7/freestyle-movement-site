@@ -25,6 +25,11 @@
                         <a class="nav-link" href="{{ .Site.BaseURL }}#about">About</a>
                     </li>
                 {{ end }}
+                {{ if .Site.Params.about.enable }}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ .Site.BaseURL }}#info">Practice</a>
+                    </li>
+                {{ end }}
                 {{ if .Site.Params.styles.enable }}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ .Site.BaseURL }}#styles">Styles</a>

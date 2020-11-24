@@ -1,25 +1,57 @@
 {{ if .Site.Params.info.enable }}
 
-    <!-- About -->
-    <section id="about" class="section about bg-gray">
-        <div class="container">
+    <!-- Important Information -->
+    <section id="info" class="section about bg-gray">
+        <div class="container-info">
 
-            <!-- Information -->
+            <!-- Announcements -->
             <div class="row">
                 <div class="col-md-7 col-sm-12 wow fadeInLeft">
                     <div class="content">
                         <div class="sub-heading">
                         {{ with .Site.Params.info.heading }}
-                            <h2>Header</h2>
+                            <h1 class="wow fadeInDown" data-wow-delay="0.3s" data-wow-duration=".2s" style="color: black;">
+                                Announcements
+                            </h1>
                         {{ end }}
                         </div>
                         {{ with .Site.Params.info.description }}
-                            <h3 style="font-size: 16px;">Some more stuff</h3>
+                            <ul>
+                                <li><strong>[Nov.13.20] - </strong>Movement practices will be momentarily cancelled due to COVID-19 
+                                    restrictions in Alberta. Click <a href="https://www.alberta.ca/coronavirus-info-for-albertans.aspx">HERE</a>
+                                    to learn more.
+                                </li>
+                                <li><strong>[Nov.23.20] - </strong>Registration for the December freestyle jam is up and you can sign up by clicking on this <a href="#">LINK</a>.
+                                </li>
+                                <li><strong>[Dec.31.20] - </strong>Website phase one is expected to be finished at this date and will proceed to move on to phase 2.
+                                </li>
+                            </ul>
+                        {{ end }}
+                        {{ with .Site.Params.info.heading2 }}
+                            <h1 class="wow fadeInDown" data-wow-delay="0.3s" data-wow-duration=".2s" style="margin-top: 50px; color: black;">
+                                Practices | Prices
+                            </h1>
+                        {{ end }}
+                        {{ with .Site.Params.info.description2 }}
+                            <ul>
+                                <li><i style="font-size: 17.5px" class="fas fa-arrow-circle-right"></i>  $5 One time drop-ins<br>
+                                    <i style="font-size: 17.5px" class="fas fa-arrow-circle-right"></i>  $35 Punch Card (10 Drop-ins)<br>
+                                    <i style="font-size: 17.5px" class="fas fa-arrow-circle-right"></i>  $50 - 30 Hours of practice<br>
+                                    <i style="font-size: 17.5px" class="fas fa-arrow-circle-right"></i>  $90 1 year worth of drop-ins approximately 51 practices<br>
+                                </li>
+                                <li style="margin-top: 5px;">
+                                    <strong>
+                                        Practice sessions are open to all ages and skill levels. Bboys, Bgirls, 
+                                        Freestylers and Choreographers are welcome to come, play their music and 
+                                        share the studio space.
+                                    </strong>
+                                </li>
+                            </ul>
                         {{ end }}
                     </div>
                 </div>
 
-                <!-- Carousel -->
+                <!-- Practice Schedule Slider -->
                 <div class="col-md-5 col-sm-12 wow fadeInLeft" data-wow-delay="0.3s">
                     <div class="about-slider">
                         {{ range .Site.Params.info.sliderItem }}

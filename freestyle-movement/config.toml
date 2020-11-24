@@ -36,19 +36,17 @@ btnText           = "Learn More"
 # Info
 [params.info]
 enable      = true
-heading     = ""
-description = ""
+heading     = "Important Information"
+heading2     = "Important Information"
+description = "Announcements go here"
+description2 = "Announcements go here"
 
 [[params.info.sliderItem]]
-image   = "images/about/fm-logo-p.jpg"
+image   = "images/about/tues.jpg"
 [[params.info.sliderItem]]
-image   = "images/about/unrivaled.jpg"
+image   = "images/about/fri.jpg"
 [[params.info.sliderItem]]
-image   = "images/about/unrivaled.jpg"
-[[params.info.sliderItem]]
-image   = "/images/about/prac-1.jpg"
-[[params.info.sliderItem]]
-image   = "/images/about/prac-2.jpg"
+image   = "images/about/sat.jpg"
 
 
 
@@ -75,12 +73,12 @@ image   = "/images/about/prac-2.jpg"
 [params.styles]
 enable      = true
 title       = "Dance Styles"
-subtitle    = "Here we can put all the different dance styles"
+subtitle    = ""
 
 [[params.styles.stylesItem]]
 # use delay for reveal items one by one
 icon    = ""
-title   = "[Breakdancin]()"
+title   = "[Breakdancing]()"
 description = ""
 delay   = "0s"
 

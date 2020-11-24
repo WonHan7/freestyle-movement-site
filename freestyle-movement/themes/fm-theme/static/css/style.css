@@ -399,22 +399,10 @@ i {
     color: #4267B2;
 }
 
-/* ANNOUNCEMENTS */
-.info .content h3 {
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 36px;
-    color: #7e7e7e;
-    margin-bottom: 20px;
-    font-family: 'Droid Serif', serif;
-}
-
-.info .info-slider img {
-    width: 100%;
-    height: auto;
-}
+/* INFO */
 .container-info {
-    /*  */
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /* NAVIGATION  */
