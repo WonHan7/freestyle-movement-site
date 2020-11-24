@@ -78,52 +78,51 @@ subtitle    = ""
 [[params.styles.stylesItem]]
 # use delay for reveal items one by one
 icon    = ""
-title   = "[Breakdancing]()"
+title   = "Breakin'"
 description = ""
 delay   = "0s"
 
 [[params.styles.stylesItem]]
 icon    = ""
-title   = "[Locking]()"
+title   = "Hip-Hop"
 description = ""
 delay   = "0.2s"
 
 [[params.styles.stylesItem]]
 icon    = ""
-title   = "[Whacking]()"
+title   = "K-Pop"
 description = ""
 delay   = "0.4s"
 
-[[params.styles.stylesItem]]
-icon    = ""
-title   = "[K-Pop]()"
-description = ""
+#[[params.styles.stylesItem]]
+#icon    = ""
+#title   = ""
+#description = ""
+#delay   = "0.6s"
 
-delay   = "0.6s"
+#[[params.styles.stylesItem]]
+#icon    = ""
+#title   = ""
+#description = ""
+#delay   = "0.8s"
 
-[[params.styles.stylesItem]]
-icon    = ""
-title   = "[Contemporary]()"
-description = ""
-delay   = "0.8s"
+#[[params.styles.stylesItem]]
+#icon    = ""
+#title   = ""
+#description = ""
+#delay   = "1s"
 
-[[params.styles.stylesItem]]
-icon    = ""
-title   = "[Popping]()"
-description = ""
-delay   = "1s"
+#[[params.styles.stylesItem]]
+#icon    = ""
+#title   = ""
+#description = ""
+#delay   = "1.2s"
 
-[[params.styles.stylesItem]]
-icon    = ""
-title   = "[Tutting]()"
-description = ""
-delay   = "1.2s"
-
-[[params.styles.stylesItem]]
-icon    = ""
-title   = "[Funk]()"
-description = ""
-delay   = "1.5s"
+#[[params.styles.stylesItem]]
+#icon    = ""
+#title   = ""
+#description = ""
+#delay   = "1.5s"
 
 
 
