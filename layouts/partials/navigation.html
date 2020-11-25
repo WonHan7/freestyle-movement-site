@@ -5,7 +5,7 @@
         <!-- Logo -->
         <a class="navbar-brand float-none float-lg-left" href="{{ .Site.BaseURL }}">
             {{ with .Site.Params.navigation.logo }}
-                <img src="/images/siteicon.png" alt="Freestyle Movement" width="64px" height="64px" style="border-radius: 50%"/>
+                <img class="nav-icon" src="/images/siteicon.png" alt="Freestyle Movement" width="64px" height="64px"/>
             {{ end }}
         </a>
 
@@ -25,7 +25,7 @@
                         <a class="nav-link" href="{{ .Site.BaseURL }}#about">About</a>
                     </li>
                 {{ end }}
-                {{ if .Site.Params.about.enable }}
+                {{ if .Site.Params.info.enable }}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ .Site.BaseURL }}#info">Practice</a>
                     </li>

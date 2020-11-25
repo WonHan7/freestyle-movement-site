@@ -271,6 +271,10 @@ a:active {
 }
 
 /* MAIN */
+.main-bg {
+    background-image: url("/images/movevents.jpg");
+}
+
 .bg-gray {
     background: #f8f8f8;
 }
@@ -389,6 +393,14 @@ a:active {
 i {
     font-size: 35px;
 }
+.icon-pad {
+    padding-left: 10px;
+}
+
+.discord {
+    font-size: 35px;
+    margin-left: 10px;
+}
 .instagram {
     color: #833AB4;
 }
@@ -403,6 +415,31 @@ i {
 .container-info {
     margin-left: 5%;
     margin-right: 5%;
+}
+.bk-header {
+    color: black;
+}
+.p-header {
+    margin-top: 50px;
+}
+.p-note {
+    font-size: 18.5px;
+    margin-top: 10px;
+    line-height: 22.5px;
+}
+.announcement {
+    font-size: 20px;
+    line-height: 30px;
+}
+.price {
+    font-size: 20px;
+    line-height: 30px;
+}
+.price i {
+    font-size: 20px;
+}
+.img-radius {
+    border-radius: 15px;
 }
 
 /* NAVIGATION  */
@@ -441,6 +478,10 @@ i {
 
 .navigation.animated .menu a {
     color: #666;
+}
+
+.nav-icon {
+    border-radius: 50%;
 }
 
 .menu li a {
@@ -510,6 +551,10 @@ i {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+.movements-bg {
+    background-image: url("/images/movevents.jpg")
 }
 
 .movevents:before {

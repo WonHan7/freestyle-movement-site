@@ -14,7 +14,7 @@
                         {{ end }}
                         </div>
                         {{ with .Site.Params.about.description }}
-                            <h3 style="font-size: 16px;">Some more stuff</h3>
+                            <h3>Some more stuff</h3>
                         {{ end }}
                     </div>
                 </div>
@@ -23,12 +23,7 @@
                 <div class="col-md-5 col-sm-12 wow fadeInLeft" data-wow-delay="0.3s">
                     <div class="about-slider">
                         {{ range .Site.Params.about.sliderItem }}
-                            <!-- You can also do | <img src="{{ .image }}"/> | and modify images in slider through config.toml -->
-                            <img style="border-radius: 15px;" src="/images/about/fm-logo-p.jpg">
-                            <img style="border-radius: 15px;" src="/images/about/unrivaled.jpg">
-                            <img style="border-radius: 15px;" src="/images/about/unrivaled.jpg">
-                            <img style="border-radius: 15px;" src="/images/about/prac-1.jpg">
-                            <img style="border-radius: 15px;" src="/images/about/prac-2.jpg">
+                            <img src="{{ .image }}"/>
                         {{ end }}
                     </div>
                 </div>
